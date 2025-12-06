@@ -3,7 +3,6 @@ time = document.getElementsByClassName('bubbles')[0];
 
 // Cache fish elements and their starting positions for vertical movement
 const fishes = [
-    { element: fish1, speed: 0.25 },
     { element: fish2, speed: 0.22 },
     { element: fish3, speed: 0.18 },
     { element: fish4, speed: 0.14 }
@@ -19,10 +18,9 @@ if (screen.width < 400) {
     time.style.setProperty('--transform-y', '-700vh')
 
     // Slightly slow down upward swim on smaller screens for readability
-    fishes[0].speed = 0.2;
-    fishes[1].speed = 0.17;
-    fishes[2].speed = 0.14;
-    fishes[3].speed = 0.1;
+    fishes[0].speed = 0.17;
+    fishes[1].speed = 0.14;
+    fishes[2].speed = 0.1;
 }
 
 
